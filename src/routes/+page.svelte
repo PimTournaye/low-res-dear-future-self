@@ -35,7 +35,7 @@
 				type="email"
 				name="email"
 				id="email"
-				class="p-2.5 w-full text-sm text-gray-400 rounded-lg border focus:border-[#7b5aa6] bg-gray-700 border-gray-600 dark:placeholder-gray-400"
+				class="p-2.5 w-full text-sm text-gray-400 rounded-lg border focus:border-[#57068c] bg-gray-700 border-gray-600 dark:placeholder-gray-400"
 				placeholder="email@nyu.edu"
 			/>
 			{#if $errors.email}<span class="invalid">{$errors.email}</span>{/if}
@@ -47,7 +47,7 @@
 				aria-invalid={$errors.message ? 'true' : undefined}
 				name="message"
 				id="message"
-				class="p-2.5 w-full text-sm text-gray-400 rounded-lg border focus:border-[#7b5aa6] bg-gray-700 border-gray-600 h-40"
+				class="p-2.5 w-full text-sm text-gray-400 rounded-lg border focus:border-[#57068c] bg-gray-700 border-gray-600 h-40"
 				placeholder="Write your thoughts here..."
 			/>
 			{#if $errors.message}<span class="invalid">{$errors.email}</span>{/if}
