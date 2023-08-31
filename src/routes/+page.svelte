@@ -13,8 +13,8 @@
 </script>
 
 <main class="xl:mx-16 xl:my-4 md:mx-8 md:my-4 mx-1 mt-4">
-	<h1 class="text-6xl uppercase text-left mb-2">Letter to your future self</h1>
-	<p class="text-lg text-left">
+	<h1 class="text-6xl md:text-4xl uppercase text-left mb-2">Letter to your future self</h1>
+	<p class="text-lg md:text-md text-left">
 		It's hard to believe, but the NYC Summer Intensive is already over! Before you know it, we will
 		all be in Shanghai, getting ready to graduate! Yet a lot can and will change in a year - most of
 		all, each one of us! Here's a fun activity we've come up with: write a letter to your Future
