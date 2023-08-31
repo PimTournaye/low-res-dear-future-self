@@ -5,8 +5,8 @@ import * as sendgrid from '@sendgrid/mail';
 import { SENDGRID_API_KEY, SENDGRID_TEMPLATE_ID } from '$env/static/private';
 
 // Email stuff
-// const date = 	1716343200; // Date to be sent at 	Wed May 22 2024 02:00:00 GMT+0000
-const date = Math.floor(Date.now() / 1000) + 60; // UNIX timestamp of now + 1 minute for testing
+const date = 	1716343200; // Date to be sent at 	Wed May 22 2024 02:00:00 GMT+0000
+// const date = Math.floor(Date.now() / 1000) + 60; // UNIX timestamp of now + 1 minute for testing
 
 export const load = (async () => {
   // Server API:
