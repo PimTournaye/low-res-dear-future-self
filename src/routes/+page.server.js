@@ -1,7 +1,7 @@
 import { superValidate } from 'sveltekit-superforms/server';
 import { z } from 'zod';
 import { fail } from '@sveltejs/kit';
-import * as sendgrid from '@sendgrid/mail';
+import sgMail from '@sendgrid/mail'
 import { SENDGRID_API_KEY, SENDGRID_TEMPLATE_ID } from '$env/static/private';
 
 // Email stuff
@@ -33,7 +33,7 @@ export const actions = {
     const email = form.data.email;
     const emailMessage = form.data.message;
 
-    sendgrid.setApiKey(SENDGRID_API_KEY);
+    sgMail.setApiKey(SENDGRID_API_KEY);
 
     console.log(form.data);
     console.log("Sending email to " + email + typeof(email));
@@ -49,7 +49,7 @@ export const actions = {
       sent_at: date
     };
 
-    sendgrid.send(msg)
+    sgMail.send(msg)
     .then((response) => {
       console.log(response[0].statusCode);
       console.log(response[0].headers);
